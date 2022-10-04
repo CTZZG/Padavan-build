@@ -51,7 +51,6 @@ jobs:
         cd /opt/rt-n56u/trunk
         mkdir -p /opt/rt-n56u/trunk/tools/go
         wget https://gomirrors.org/dl/go/go$go_version.linux-amd64.tar.gz -P /opt/rt-n56u/trunk/tools/go
-        tar zxfv /opt/rt-n56u/trunk/tools/go/go$go_version.linux-amd64.tar.gz -C /opt/rt-n56u/trunk/tools/go
         if [ ! -f configs/templates/$TNAME.config ] ; then
         echo "configs/templates/$TNAME.config not found "
         exit 1
